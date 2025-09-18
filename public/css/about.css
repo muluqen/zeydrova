@@ -1,0 +1,105 @@
+/* About Section */
+.about {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #f9f9f9, #efefef);
+  text-align: center;
+  color: #2c2c2c;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative floating shapes (optional professional touch) */
+.about::before,
+.about::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.about::before {
+  width: 200px;
+  height: 200px;
+  background: #172c66;
+  top: -50px;
+  left: -50px;
+}
+
+.about::after {
+  width: 150px;
+  height: 150px;
+  background: #28a745;
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Heading */
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #172c66;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Paragraph */
+.about p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #444;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional subtle divider */
+.about-divider {
+  width: 60px;
+  height: 3px;
+  background: #172c66;
+  margin: 2rem auto 0;
+  border-radius: 2px;
+  opacity: 0.2;
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth entrance animation for heading and paragraph */
+.about h2,
+.about p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.about h2 {
+  animation-delay: 0.2s;
+}
+
+.about p {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}

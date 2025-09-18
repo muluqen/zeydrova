@@ -1,0 +1,51 @@
+/* Header / Navbar */
+.site-name-right {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #e2e8f0; /* Soft gray */
+    font-size: 1.9rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #0f172a; /* Deep Navy */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Logo */
+.navbar .logo-img {
+    height: 70px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+.navbar .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #3b82f6; /* Electric Blue */
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Nav Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a {
+    color: #e2e8f0; /* Soft Gray */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: #60a5fa; /* Lighter Electric Blue */
+}

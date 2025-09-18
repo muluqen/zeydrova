@@ -1,0 +1,85 @@
+/* Contact Section */
+.contact {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #f5f7fa, #eaeef3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #172c66;
+  font-weight: 700;
+}
+
+/* Subtext */
+.contact p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Form Container */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Inputs & Textarea */
+.contact input,
+.contact textarea {
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Focus State */
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #172c66;
+  box-shadow: 0 0 0 3px rgba(23, 44, 102, 0.15);
+  outline: none;
+}
+
+/* Submit Button */
+.contact button {
+  background-color: #172c66;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover */
+.contact button:hover {
+  background-color: #0f1f4b;
+  transform: translateY(-2px);
+}
+/* Invalid input styling */
+.contact input.invalid {
+  border-color: #e63946;
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+/* Error message */
+#telegram-error {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  display: block;
+}
