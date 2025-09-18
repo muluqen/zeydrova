@@ -29,8 +29,11 @@ COPY . .
 RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 
 # Set permissions
-RUN chown -R www-data:www-data /var/www \
-    && chmod -R 755 /var/www
+RUN chmod -R 775 storage bootstrap/cache \
+    && chown -R www-data:www-data storage bootstrap/cache
+
+# Cache Laravel config
+RUN php artisan config:cache && php artisan route:cache && php artisan view:cache
 
 EXPOSE 8000
 
